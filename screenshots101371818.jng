@@ -1,0 +1,34 @@
+clear
+sleep 2.0
+echo -e "\e[0m
+             █▀▀█ █▀▀█ █░█ █▀▀ █▀▀█
+             █▀▀▄ █░░█ █▀▄ █▀▀ █░░█
+             █▄▄█ ▀▀▀▀ ▀░▀ ▀▀▀ █▀▀▀\e[33m  v 3.0\e[0m";
+echo -e "\e[0m
+╔══════════════════════════════════════════════════╗
+║\e[91m   Author\e[0m :\e[92m Fhans Moby\e[0m                            ║
+║\e[91m   Rules\e[0m  :\e[92m No Recode , hargai yang buat\e[0m          ║
+║\e[91m   Github\e[0m :\e[92m https://github.com/Fhans-Moby/DarkBK\e[0m  ║
+╠══════════════════════════════════════════════════╝\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m1\e[33m]\e[32m WEB NO VPN\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m2\e[33m]\e[32m WEB VPN\e[0m";
+echo -e "\e[0m║\e[33m[\e[91m3\e[33m]\e[31m EXIT\e[0m";
+xdg-open https://github.com/Fhans-Moby/
+read -p '╚═══════════▶︎ ' userinput1;
+#
+if [ "${userinput1}" = "1" ]
+then
+bash JSON1
+sleep 2.0
+fi
+if [ "${userinput1}" = "2" ]
+then
+bash JSON2
+fi
+if [ "${userinput1}" = "3" ]
+then
+echo -e "\e[92m[\e[91m⟳\e[92m]\e[91m SEDANG KELUAR HARAP TUNGGU...\e[0m";
+sleep 1.2
+clear
+login
+fi
